@@ -1,6 +1,7 @@
 #!/bin/bash
 
 install_hermit() {
+    clear
     echo -n "Bot Name: "
     read git_name
     clear
@@ -26,12 +27,14 @@ install_hermit() {
     echo -e "VPS = true\nSESSION_ID = $session_id\nAUTH_FILE = session\nSUDO = $sudo_numbers\nPREFIX = $bot_prefix\nMODE = $mode\nLOG_MSG = true" > config.env
 }
 
+clear
 echo -n "Do you have session id (y/n): "
 read has_session
 
 if [ "$has_session" = "y" ]; then
     install_hermit
 else
+clear
     echo -e "\e[93mPlease visit. \e[34mhttps://hermit.adithyan.xyz/qr\e[93m Go and take session. Come back\n"
     sleep 10
     echo -n "Did you successfully take session? (y/n): "
