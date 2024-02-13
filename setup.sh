@@ -12,6 +12,7 @@ install_hermit() {
 
     echo -n "Prefix: "
     read bot_prefix
+    clear
 
     echo -n "SUDO: "
     read sudo_numbers
