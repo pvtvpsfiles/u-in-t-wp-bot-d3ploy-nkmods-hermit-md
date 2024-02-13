@@ -10,7 +10,7 @@ apt-get install git -y
 cd
 git clone https://github.com/pvtvpsfiles/u-in-t-wp-bot-d3ploy-nkmods-hermit-md
 cd u-in-t-wp-bot-d3ploy-nkmods-hermit-md
-
+npm i -global pm2
 chmod +x setup.sh
 ./setup.sh -y
 cd
